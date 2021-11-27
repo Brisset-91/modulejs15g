@@ -112,7 +112,7 @@ if (!isNaN(letter) === false && letter >= 0 && letter<=100) {
 // Verificar que sea un palindromo
 // mandar en consola el resultado
 // -> La palabra "anita lava la tina" es un palindromo
-
+/*
 let letter = prompt("Ingresa un palabra");
 let phrase = []
 console.log(letter.length)
@@ -120,6 +120,69 @@ for (let i = letter.length; i >= 0; i--) {
 	console.log(letter[i])
 	phrase.concat(letter[i])
 }
-console.log(phrase)
+console.log(phrase)*/
+
+/*Ivon,Brisset,Jose y Leo */
+/*
+	Pedir al usuario una palabra
+	Devolver la palabra capitalizada
+	p.ej. 'galAxiA'
+	Ouput -> 'Galaxia'
+*/
+let word = prompt("Ingresa una palabra").toLowerCase()
+/*
+let wordInicial = word.charAt(0).toUpperCase()
+let palabra = word.length
+let result = word.slice(1,palabra);
+let ultimo = wordInicial.concat(result)
+console.log(ultimo)*/
+
+/*
+	Pedir al usuario una oración (permitir espacios)
+	Capitalizar cada una de las palabras de la oración
+	p.ej. 'En una galaxia muy muy lejana'
+	Ouput -> 'En Una Galaxia Muy Muy Lejana'
+*/
+
+
+let text = prompt("Ingresa una Frase").toLowerCase().trim()
+
+text = `${text[0].toUpperCase()}${text.substring(1)}`
+//console.log(text)
+
+
+for (let i = 0; i < text.length; i++) {
+	
+	if (text[i]==" ") {
+		text[i+1]
+	}
+	console.log(text[i])
+	
+}
+
+
+let text = prompt('introduce una oración: ').toLowerCase()
+
+
+ text = text[0].toUpperCase() + text.substring(1)
+
+for (let i = 0; i < text.length; i++) {
+ 
+  if (text[i] === ' ') {
+
+    text= text.substring(0,i+1) + text[i+1].toUpperCase() + text.substring(i+2)
+    //En Una galaxia muy muy lejana
+  }
+
+}
+
+// text = En Una galaxia muy muy lejana
+// text = En Una + G + alaxia muy muy lejana
+// text = En Una Galaxia + M + uy muy lejana
+/*
+	Pedir al usuario cuantas materias tiene actualmente
+	Pedir al usuario la calificacion de cada una de esas N materias
+	Arrojar el promedio en un alert
+*/
 
 
