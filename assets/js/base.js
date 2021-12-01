@@ -1,94 +1,4 @@
 
-/*
-- Estar en la rama de la clase
-- En el archivo weather.js
-- Pedir al usuario que ingrese como esta el clima en su ciudad
---Opciones
----Soleado
----Lluvioso
----Nevando
----Nublado
--Pedir la temperatura aproximada en ºC
--Imprimir en consola un descripción acorde al estado del día y la temperatura de ºF
---P.ej: En tu ciudad, el día está "Soleado" con una temperatura de 100ºF
-
-
-let temperature = prompt("como está el clima en tu ciudad (Soleado,Lluvioso,Nevando o Nublado)")
-console.log(temperature)
-let temperatureCelsius = parseInt(prompt("ingresa el número de temperatura aprox. en ºC"))
-console.log(temperatureCelsius)
-
-if (!isNaN(temperatureCelsius) === false) {
-	let Fahrenheit = (temperatureCelsius * 9/5)+ 32
-
-	switch (temperature ) {
-		case 'Soleado':
-			console.log(`En tu ciudad, el día está "Soleado" con una temperatura de ${Fahrenheit} ºC" `)
-			break;
-		case 'Lluvioso':
-			console.log(`En tu ciudad, el día está "Lluvioso" con una temperatura de  ${Fahrenheit} ºC" `)
-			break;
-		case 'Nevando':
-			console.log(`En tu ciudad, el día está "Nevando" con una temperatura de  ${Fahrenheit} ºC" `)
-			break;
-		case 'Nublado':
-			console.log(`En tu ciudad, el día está "Nublado" con una temperatura de  ${Fahrenheit} ºC" `)
-			break;
-		default:
-			console.log("Opcion ingresada incorrecta")
-			break;
-	} 
-
-} else {
-	console.error("Ingresa un dato válido")
-} */
-
-
-//  pedir al usuario un string
-//  contar las vocales y las consonantes
-// imprimir en consola
-// 2 vocales y 2 consonantes
-/*let letter = prompt("Ingresa alguna palabra")
-let vocales = 0
-let consonantes = 0
-for(let y = 0; y < letter.length; y++ ) {
-	if (letter[y]=="a" || letter[y]=="e" || letter[y]=="i" || letter[y]=="o" || letter[y]=="u" ) {
-		vocales += 1
-	} else {
-		consonantes += 1
-	}
-}
-
-console.log(`Son ${vocales} vocales y ${consonantes} consonantes`)*/
-
-// pedir una palanbra con espacio al inicio y al final
-// contar las letras "a" y "e", 
-// Contar numero de espacios, sin contar los espacios
-// al inicio y al final
-/*
-let letter = prompt("Ingresa alguna palabra con espacio al inicio y final").trim().toLowerCase() ;
-let vocalA = 0
-let vocalE = 0
-let vacios = 0
-if (letter.length>0) {
-	for(let y = 0; y < letter.length; y++ ) {
-		if (letter[y]=="a" || letter[y]=="á" ) {
-			vocalA += 1
-		} 
-		else if (letter[y]=="e" || letter[y]=="é"){
-			vocalE += 1
-		}
-		else if (letter[y]==" "){
-			vacios += 1
-		}
-	}
-} else {
-	console.log("ingresa un texto")
-}
-
-console.log(letter)
-console.log(`contiene ${vocalA} vocales "a", contiene ${vocalE} vocales "e" y ${vacios} vacios intermedios`)*/
-
 // Pedir el usuario 1 numero entre 1 y 100
 // sumar todos los numeros entre el 1 y este numero
 // Mandar un alert con el  total
@@ -128,8 +38,8 @@ console.log(phrase)*/
 	Devolver la palabra capitalizada
 	p.ej. 'galAxiA'
 	Ouput -> 'Galaxia'
-*/
-let word = prompt("Ingresa una palabra").toLowerCase()
+
+let word = prompt("Ingresa una palabra").toLowerCase()*/
 /*
 let wordInicial = word.charAt(0).toUpperCase()
 let palabra = word.length
@@ -142,7 +52,7 @@ console.log(ultimo)*/
 	Capitalizar cada una de las palabras de la oración
 	p.ej. 'En una galaxia muy muy lejana'
 	Ouput -> 'En Una Galaxia Muy Muy Lejana'
-*/
+
 
 
 let text = prompt("Ingresa una Frase").toLowerCase().trim()
@@ -174,7 +84,7 @@ for (let i = 0; i < text.length; i++) {
     //En Una galaxia muy muy lejana
   }
 
-}
+}*/
 
 // text = En Una galaxia muy muy lejana
 // text = En Una + G + alaxia muy muy lejana
@@ -185,4 +95,122 @@ for (let i = 0; i < text.length; i++) {
 	Arrojar el promedio en un alert
 */
 
+/////////nueva clase 29-11-21
 
+
+/*
+// funcion sin parametros
+function suma() {
+	return 2 +  2
+}
+
+// funcion con parametros
+
+// let celsiusGradesReturned = toCelsius(100)
+// console.log(celsiusGradesReturned)
+function toCelsius(fahrenheit) {
+	let celsiusGrades = (5 / 9) * (fahrenheit - 32)	
+
+	// retorno de la funcion
+	return celsiusGrades
+}
+*/
+// funcion que pida el nombre al usuario
+// y lo imprima en consola
+
+/*
+function newName() {
+	let names = prompt("Ingresa tu nombre")
+	console.log(names)
+	
+}
+newName()
+
+/**
+ * Funcion que reciba una palabra
+ * y la retorne al revés
+
+
+function word() {
+	let word = prompt(`Ingresa una palabra`).trim()
+	let wordBackward = ""
+	console.log(word)
+	for (let i = word.length-1; i >=0; i--) {
+		wordBackward += word[i]
+	}
+	console.log(wordBackward)
+}
+word() */
+
+//brisset, imael job
+/*
+Función 1:
+Imprimir en consola las tablas de multiplicar del 1 al 10 */
+
+function tables(){ 
+	for(i = 1; i <= 10; i++){ 
+		for(j = 1; j <= 10; j++){ 
+			console.log(`${i} x ${j} = ${i * j}`) 
+		} 
+	} 
+} 
+//tables()
+/*
+Función 2:
+Imprimir en consola la suma de 1 a N, siendo N un numero entre 1 y 100
+let numberUser = parseInt(prompt('Dame un numero entre 1 y 100'))*/
+let suma = 0
+
+function sum(number) {
+	if(!isNaN(number)){
+		for( i = 1; i <= number; i++){
+		suma += i
+		}
+	} else {
+		console.log('No es un numero valido')
+	}
+	console.log(suma)
+	//return suma
+}
+//sum(numberUser)
+
+/*
+Función 3:
+Imprimir en consola si una oración es un palindromo (puede contener espacios)
+anita lava la tina -> True*/
+
+
+function checkPalindrome(string) { 
+	const arrayValues = string.split(''); 
+	const reverseArrayValues = arrayValues.reverse(); 
+	const reverseString = reverseArrayValues.join(''); 
+	if(string == reverseString) { console.log('True'); } 
+	else { console.log('False'); 
+	}
+} 
+const string = prompt('Ingresa una string: '); checkPalindrome(string); 
+/*
+Función 4:
+Imprimir en consola la suma total de todos los digitos de una cantidad 
+p.ej. "1234" -> 10*/
+
+let numberUser = parseInt(prompt('Dame un numero con mas de 1 dígitos'))
+let suma = 0
+let sumaDigitos = 0
+
+function sum(number) {
+	if(!isNaN(number)){
+		for( i = 1; i <= numberUser; i++){
+			suma += i
+		}
+	} else {
+		console.log('No es un numero valido')
+	}
+	console.log(suma)
+	//return suma
+}
+sum(numberUser)
+/*
+Función 5:
+Imprimir en consola la suma de los múltiplos de 3 y 5 contenidos entre el 1 y 100
+-> 233168*/	
