@@ -1,168 +1,4 @@
 
-/** 
- * Ejercicio 1
- * imprimir en consola todos los numeros pares entre 1 y 100
- * -> 2
- * -> 4
- * -> 100
-
-for (let i = 0; i <=100; i++) {
-    if (i%2==0) {
-        //console.log(`Número par entre 1 al 100 es ${i}`)
-    }
-}*/
-/**
- * Ejercicio 2
- * Pedir al usuario un string
- * Invertir el orden e imprimir en consola
- * Entrada: "reverse"
- * Salida: -> esrever
- * hint: https://www.w3schools.com/jsref/jsref_length_string.asp
-*/
-//let word = prompt(`Ingresa una palabra`).trim()
-/*
-console.log(word.length)
-let wordBackward = ""
-console.log(word)
-for (let i = word.length-1; i >=0; i--) {
-    wordBackward += word[i]
-}
-console.log(wordBackward)*/
-
-/**
- * Ejercicio 3 
- * Declarar un string de al menos 2 palabras
- * Imprimir en consola el string separado por guiones en cada palabra
- * "hola koders"
- * "hola-koders"
- * hint: https://www.w3schools.com/jsref/jsref_replace.asp
- 
-let phrase = prompt(`Ingresa una frase`).trim()
-let newPhrase = phrase.replace(/ /gi, "-")
-console.log(newPhrase)*/
-
-/**
- * Ejercicio 4
- * Declarar un string con un correo electrónico
- * Enmascarar con "*" el bloque del usuario
- * "jorgec@kodemia.mx"
- * "*****@kodemia.mx"
- * 
- * hint: https://www.w3schools.com/jsref/jsref_slice_string.asp
- * hint: https://www.w3schools.com/jsref/jsref_indexof.asp
- */
-
-
-
-// Función 1:
-// valor por defecto 10
-// Imprimir en consola las tablas de multiplicar del 1 al 10 
-
-//arrow function
-const multiplicar = (a,b=10) =>{
-    if (!isNaN(a) && a > 0 &&  a <= 100 || !isNaN(b) && b> 0 &&  b <= 100 ) {
-        for (a; a <= b; a++) {
-
-            for(j = 1; j <= 10; j++){ 
-                console.log(`${a} x ${j} = ${a * j}`) 
-            } 
-        }
-    }
-    else {
-        console.log('No es un numero valido')
-    }    
-}
-
-//multiplicar(1,5)
-
-/*
-function multiplicar(a,b=10) {
-    if (!isNaN(a) && a > 0 &&  a <= 100 || !isNaN(b) && b> 0 &&  b <= 100 ) {
-        for (a; a <= b; a++) {
-
-            for(j = 1; j <= 10; j++){ 
-                console.log(`${a} x ${j} = ${a * j}`) 
-            } 
-        }
-    }
-    else {
-        console.log('No es un numero valido')
-    }    
-}
-//multiplicar(1,5)*/
-
-
-// Función 2:
-// valor por defecto 10
-// Imprimir en consola la suma de 1 a N, siendo N un numero entre 1 y 100
-
-function sumar(a,b=10) {
-    let suma = 0
-    if (!isNaN(a) && a > 0 &&  a <= 100 || !isNaN(b) && b> 0 &&  b <= 100 ) {
-        for( a; a <= b; a++){
-            suma += a
-        }
-    }  
-    else {
-		console.log('No es un numero valido')
-	} 
-    console.log(suma)
-}
-
-//sumar (5,7)
-
-// Función 3:
-// valor por defecto "1234"
-// Imprimir en consola la suma total de todos los digitos de una cantidad 
-// p.ej. "1234" -> 10
-function totalAmount(a) {
-    
-    if (!isNaN(a)) {
-        console.log(a)
-        console.log(a.length)
-        let aLength = a.split()
-        console.log(aLength)
-        for (a; a <= a.length; a++) {
-            console.log(a)
-            console.log(a.length)
-        }
-    } 
-    else {
-        console.log('No es un numero valido')
-    }
-}
-totalAmount(12345)
-// Función 4:
-// valor por defecto 3 y 5, sino el que ponga el usuario 
-// Imprimir en consola la suma de los múltiplos de 3 y 5 contenidos entre el 1 y 100
-// -> 233168
-
-
-// invertigar Arrow functions
-
-
-/**
- * Escribir un arrow function que invierta una oracion
- * hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
- * hint: https://www.w3schools.com/jsref/jsref_join.asp
- */
-
-// large solution
-const reverseSentence = (sentence ) => {
-    let newSentence = ''
-    newSentence = sentence.split('').reverse().join('')
-    return newSentence
-}
-// middle solution
-// const reverseSentence = (sentence ) => {
-//     return sentence.split('').reverse().join('')
-// }
-
-// one line solution
-// const reverseSentence = sentence => sentence.split('').reverse().join('')
-
-
-
 /**
  * Escribir un arrow function que compruebe
  * si una oración es un palindromo
@@ -217,7 +53,7 @@ const arrayReduce = (arrOne, arrTwo) => {
 
 
 let resultado = arrayReduce( [1,2], [3] )
-console.log(resultado)
+//console.log(resultado)
 // middle
 // const arrayReduce = (arrOne, arrTwo) => {
 //     let arrAdd =  0
@@ -285,3 +121,56 @@ console.log(resultado)
 
 // one line -- not recomended
 //const getRepeatItems = (arrOne, arrTwo) => arrOne.concat(arrTwo).filter((item, index,arr) => arr.indexOf(item) !== index ? item : '')
+//////////////////////////////////////////////////////Clase 01-12-21/////////////////////////////////////////
+
+// 1. Generar una function
+// que reciba un array como parametro
+// y devuelva solo los items que son pares
+// p.ej. onlyEvenValues( [1, 2, 3, 4] )
+// -> [2, 4]
+// Aplicar el metodo .forEach()
+// hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+
+const onlyEvenValues = arrNumbers => {
+    // codigo aquí
+}
+
+
+
+// 2. function que reciba como parametro una array de strings
+// y devuelva la primer y ultima letra del string
+// de cada uno de los items del array 
+// -> firstAndLast (['hola', 'mundo'] )
+// -> ['ha', 'mo']
+// .forEach() o .map()
+
+const firstAndLast = arrStrings => {
+    // codigo aquí
+
+}
+
+/**
+ * 3. Funcion que reciba un array de numeros
+ * y devuelva el promedio
+ * -> getAverage( [10, 8, 9, 7] )
+ * -> 8.5
+ */
+
+const getAverage = (arr) => {
+
+}
+
+
+//  4. funcion
+// dado un array de años, filtre los elementos
+// y devuelva un array con los años que son bisiesto
+// convertLeapYear( [1990, 2000, 2001, 2020] )
+// -> [2000,2020]
+// .forEach()
+// hint: https://docs.microsoft.com/es-es/office/troubleshoot/excel/determine-a-leap-year
+
+const convertLeapYear = arr => {
+    
+}
+
+
