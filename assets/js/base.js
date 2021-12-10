@@ -25,6 +25,25 @@ let koder = {
         this.name = objFullName[0]
         this.lastName = objFullName[1]
     },
+////Ejercicios
+    get averageKoder() {
+        let sum =  this.average.reduce((acc, cv) => acc += cv, 0)
+        let total =  this.average.length
+        let av = sum / total
+        return av
+    },
+    set averageKoder(average) {
+        this.average = average
+    },
+
+    get IMCKoder() {
+        this.peso = 57 
+        this.altura = 1.50 
+        return this.IMC = this.peso/this.altura**2 
+    },
+    set IMCKoder(IMC) {
+        this.IMC = IMC
+    },
 
 
 }
@@ -42,14 +61,11 @@ koder.fullName = ['jorge luis', 'camarillo']
 
 // getter y setter de 
 /**
- * 
  * 1. getter average
  * 2. getter, setter IMC 
  * 3. setter Score
  * 4. setter newProperty
- * 
- * 
- */
+*/
 
 
 /**
@@ -60,6 +76,7 @@ koder.fullName = ['jorge luis', 'camarillo']
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 // Agregar un metodo para calcular el IMC 
+/*
 koder.setGetIMC = function () { 
     this.peso = 57 
     this.altura = 1.50 
@@ -76,7 +93,7 @@ koder.setNewAve()
 koder.addNewProperty = function (key,value) { 
     this[key] = value 
 } 
-koder.addNewProperty('nationality','Mexican') 
+koder.addNewProperty('nationality','Mexican') *//
 
 
 console.log(koder) 
