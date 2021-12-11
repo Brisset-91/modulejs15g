@@ -181,7 +181,7 @@ if (document.querySelector('#head__title').hasAttribute('class') === true) {
 /**
  * Manipular elementos del DOM
  */
-
+/*
 let ulExample = document.createElement('li')
 ulExample.classList.add('menu')
 
@@ -202,6 +202,78 @@ secondNew.textContent = 'Products'
 ulElementNew.appendChild(secondNew)
 
 
-document.getElementsByTagName('body')[0].appendChild(ulElementNew)
+document.getElementsByTagName('body')[0].appendChild(ulElementNew)*/
+
+function reverseUser() {
+    let nameOriginal = document.querySelector('#username').value;
+    let nameReveced = nameOriginal.split("").reverse().join("")
+    document.getElementById('usernamereversed').value=nameReveced
+    console.log(nameReveced)
+}
 
 
+let cities = ['colima', 'colombia','Estado de mexico']
+
+const filterCity = () => {
+    // filtrar ciudades
+    let citySearch = document.querySelector('#name__city').value
+    let citiesFiltered = cities.filter( (city) => {
+        if(city.includes(citySearch) === true){
+            return city
+        }
+    })
+
+    // creo el layout con las ciudades filtradas
+    let lista = ''
+    citiesFiltered.forEach( (value) => {
+        lista += `<li>${value}</li>`
+    })
+
+    // agrego el layout
+    document.querySelector('#listCity').innerHTML = lista
+}
+
+/////Search ejercice
+
+let koders = [
+    {
+        name: 'emilio',
+        age: 30,
+        city: 'Guadalajara'
+    },
+    {
+        name: 'Brisset',
+        age: 30,
+        city: 'Lima'
+    }
+]
+
+//koders.forEach(element => {
+
+    const filterKoder = () => {
+        // filtrar koders
+        let koderSearch = document.querySelector('#name__koder').value.toLowerCase()
+        //koderSearch=koderSearch.toLowerCase()
+        let koderFiltered = koders.filter( (koder) => {
+            
+            if(koder.name.toLowerCase().includes(koderSearch)){
+                //console.log(koder)
+                return koder
+            }
+        })
+
+        // creo el layout con las ciudades filtradas
+        let lista = ''
+        koderFiltered.forEach( (value) => {
+            console.log(value)
+            lista += `<li><strong>${value.name}</strong>
+            <span>${value.age}</span>
+            <span>${value.city}</span></li>
+            `
+        })
+
+        // agrego el layout
+        document.querySelector('#listKoders').innerHTML = lista
+    }
+
+//});

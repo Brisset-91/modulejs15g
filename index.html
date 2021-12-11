@@ -30,8 +30,27 @@
 
         
     </ul>
+    <form action="">
+        <input type="text" id="username" placeholder="nombre original">
+        <input type="text" id="usernamereversed" placeholder="nombre al reves">
+        <button type="button" onclick="reverseUser()" >reversed!</button>
+    </form>
 
+
+    <input type="text" id="name__city" placeholder="Coloca una ciudad" onkeyup="filterCity()">
+    <ul id="listCity"> 
+    </ul>
+
+    <input type="text" id="name__koder" placeholder="Coloca un nombre" onkeyup="filterKoder()">
+    <ul id="listKoders">
+        <!--<li>
+            <strong>Brisset</strong>
+            <span>30 Años</span>
+            <span>Lima</span>
+        </li>-->
+    </ul>
     <script src="/assets/js/base.js"></script>
+
     <!-- <script src="/assets/js/is_largest.js"></script> -->
 
 </body>
