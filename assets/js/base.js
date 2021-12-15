@@ -277,3 +277,8 @@ let koders = [
     }
 
 //});
+
+
+document.getElementById('prev').addEventListener('click',()=>{
+    window.history.forward();
+})
