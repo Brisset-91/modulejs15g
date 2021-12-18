@@ -3,6 +3,7 @@
  * 
  * Tarea 1
  * Estudiar promesas JS
+ * https://www.freecodecamp.org/espanol/news/promesas-en-javascript-es6/
  * Esdutiar el api fetch
  * https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
  * 
@@ -11,6 +12,7 @@
 /**
  * Tarea 2
  * Metodos (verbos http)
+ * https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
  * GET
  * 
  * POST, PUT, PATCH, DELETE
