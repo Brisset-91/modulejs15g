@@ -33,8 +33,6 @@
  * 
  */
 
-
-// POST crear datos
 // POST crear datos
 const createUser =  (objPost) => {
     const xhttp = new XMLHttpRequest()
