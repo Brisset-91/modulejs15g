@@ -56,6 +56,7 @@ fetch("https://proy-briss-default-rtdb.firebaseio.com/.json")
                         <h6 class="card-subtitle mb-2 text-muted">${author} -  ${timetoread} min</h6>
                         <p class="card-text">${resume}</p>
                         <a href="newfetch.html?idpost=${post}" class="card-link">Editar post</a>
+                        <a href="viewPost.html?idpost=${post}" class="card-link">ver post</a>
                     </div>
                 </div>
             </div>
